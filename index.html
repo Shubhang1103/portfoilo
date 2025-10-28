@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhang - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(20, 3, 45);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            height: 100px;
+            background-color: #0f0435;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #00ffee;
+        }
+
+        .left {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00ffee;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90vh;
+            flex-wrap: wrap;
+        }
+
+        .leftSection {
+            width: 45%;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            font-weight: 500;
+        }
+
+        .leftSection span {
+            color: #00ffee;
+            font-weight: 700;
+        }
+
+        .rightSection img {
+            width: 350px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            background-color: #00ffee;
+            color: #120747;
+            padding: 12px 24px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00d4c4;
+        }
+
+        section {
+            padding: 70px 100px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #00ffee;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #ddd;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-box {
+            background: #1a084a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            background: #231057;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-box {
+            background: #1a084a;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-box:hover {
+            background: #231057;
+        }
+
+        footer {
+            background-color: #0f0435;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shubhang</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home" style="text-decoration:none;color:white;">Home</a></li>
+                    <li><a href="#about" style="text-decoration:none;color:white;">About</a></li>
+                    <li><a href="#skills" style="text-decoration:none;color:white;">Skills</a></li>
+                    <li><a href="#projects" style="text-decoration:none;color:white;">Projects</a></li>
+                    <li><button class="btn" onclick="showContact()">Contact</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="first" id="home">
+            <div class="leftSection">
+                Hey, I’m <span>Shubhang</span>.<br>
+                A passionate <span>developer</span> who believes that clean design and efficient code create impactful experiences.
+                <div class="buttons">
+                    <button class="btn" onclick="window.open('https://github.com/Shubhang1103')">GitHub</button>
+                    <button class="btn" onclick="window.open('https://www.linkedin.com/in/shubhang-pratap-singh-4a8080294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')">LinkedIn</button>
+                    <button class="btn" onclick="window.open('file:///C:/Users/91941/Downloads/Shubhang_Pratap_Singh_FullStack_Resume.pdf')">Download Resume</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm <b>Shubhang Pratap Singh</b>, an engineering student who loves turning ideas into reality through code.
+                With a strong interest in web development and design, I focus on building clean, responsive, and modern digital experiences.
+                My goal is to continuously learn and develop high-performance solutions that make an impact.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-box"><h3>Frontend</h3><p>HTML, CSS, JavaScript, React.js, Tailwind CSS</p></div>
+                <div class="skill-box"><h3>Backend</h3><p>Node.js, Express.js, MongoDB, MySQL</p></div>
+                <div class="skill-box"><h3>Programming</h3><p>Python, Java, C, C++</p></div>
+                <div class="skill-box"><h3>Tools & Platforms</h3><p>Git, GitHub, VS Code, Linux, Figma</p></div>
+                <div class="skill-box"><h3>Soft Skills</h3><p>Problem Solving, Team Collaboration, Creativity, Communication</p></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-box">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern, responsive personal portfolio designed with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-box">
+                    <h3>Smart Gardening System</h3>
+                    <p>An IoT-based project to automate garden irrigation and monitor soil health using sensors.</p>
+                </div>
+                <div class="project-box">
+                    <h3>Vehicle Management System</h3>
+                    <p>A full-stack web app for managing vehicle data, purchase history, and analytics.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Shubhang Pratap Singh | All Rights Reserved
+    </footer>
+
+    <script>
+        function showContact() {
+            alert("📧 Contact me at: shubhangpratap7287@gmail.com");
+        }
+    </script>
+</body>
+</html>
